@@ -1,0 +1,22 @@
+AutoIT has three components
+-AutoIt window info
+-SciTE script editor
+-converter - au3 to exe
+
+
+Steps to write autoit script:
+- spy the windows elements e.g textbox, button
+- use autoit commands with their syntax 
+- covert autoit .au3 script into .exe format
+-call the .exe file in the selenium flow whenever required
+
+
+
+
+AutoIT Script:
+$windowHandel=WinGetHandle("Open");
+WinActivate($windowHandel);
+
+ControlSetText("File Upload","","[CLASS:Edit;INSTANCE:1]","H:\AutoIT\sample1_02_07_2017.txt")
+
+ControlClick ( "File Upload", "", "[CLASS:Button;INSTANCE:1]")
